@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Caprasimo&family=Mulish:ital,wght@1,300&family=Poppins:ital,wght@0,100;1,100&display=swap');
+
+img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+}
+
+#container{
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 15vh;
+  
+}
+
+
+.card {
+  background-color: white;
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid #bacdd8;
+}
+.tag {
+  padding: 5px 17px;
+  margin: 10px 10px;
+  border: 1px solid;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.tag:focus,
+.tag:hover {
+  background-color: #0077ff;
+  color: #e0efff;
+  cursor: pointer;
+}
+
+.name {
+  font-size: 24px;
+  font-weight: 680;
+  margin-top: 16px;
+}
+
+p {
+  font-size: 14px;
+  color: #000000;
+  line-height: 150%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  border: none;
+  padding: 12px 12px;
+  border-radius: 50px;
+  font-weight: 600;
+  color: #0077ff;
+  background-color: #e0efff;
+  margin: 0 auto;
+  display: block;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+
+button:focus,
+button:hover {
+  background-color: #0077ff;
+  color: #e0efff;
+}
+
+.card-details {
+  padding: 16px 8px 8px 8px;
+}
+
+.home__social {
+  display: flex;
+  flex-direction: column;
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.home__social-icon {
+  width: max-content;
+  margin-bottom: var(--mb-2);
+  font-size: 1.5rem;
+  color: var(--second-color);
+  margin: 34px;
+}
+
+.home__social-icon:hover {
+  color: var(--first-color);
+}
+
+.home__img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 260px;
+}
+
+.home__blob {
+  fill: #0044ff;
+}
+
+.home__blob-img {
+  width: 360px;
+}
+
+/* Media Query for devices with a maximum width of 600px */
+@media screen and (max-width: 600px) {
+  #container {
+    max-width: 100%;
+    margin-top: 10vh;
+  }
+
+  .card {
+    border: none;
+  }
+
+  .name {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+
+  .home__social-icon {
+    margin: 10px;
+  }
+
+  .home__img {
+    width: 180px;
+  }
+
+  .home__blob-img {
+    width: 260px;
+  }
+}
